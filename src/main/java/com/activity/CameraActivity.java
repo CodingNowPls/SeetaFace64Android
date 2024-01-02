@@ -9,6 +9,7 @@ import android.view.View;
 
 
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.camera.CameraFragment;
@@ -16,7 +17,7 @@ import com.camera.CameraPresenter;
 import com.seetatech.seetaverify.R;
 import com.seetaface.FaceHelper;
 
-public class CameraActivity extends PermissionActivity {
+public class CameraActivity extends AppCompatActivity {
 
     public static final String TAG = "CameraActivity";
     private Fragment fragment = FragmentFactory.create();
@@ -64,14 +65,7 @@ public class CameraActivity extends PermissionActivity {
         Log.i(TAG, "onConfigurationChanged");
     }
 
-    /**
-     * 通知所有权限请求完成,可以开始拷贝资源
-     */
-    @Override
-    protected void notifyAllPermissionsRequested() {
 
-
-    }
 
 
     private static class FragmentFactory {

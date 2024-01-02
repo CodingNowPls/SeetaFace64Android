@@ -309,8 +309,7 @@ public class CameraFragment extends Fragment
 
         //显示识别结果
         registerNameTips.setText(name);
-        edit_name.setText(name);
-    }
+     }
 
     @Override
     public void showSimpleTip(String tip) {
